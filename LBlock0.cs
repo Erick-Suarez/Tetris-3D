@@ -30,7 +30,7 @@ public class LBlock0 {
       var objectPos = Camera.current.ScreenToWorldPoint(mousePos);
       Instantiate(Lblock , objectPos, Quaternion.identity);
     }
-    
+
     private void rotate(x,y) {
         rm2D_0_LBlock(x,y);
         if(canPlace_LBlock270(x,y)) {

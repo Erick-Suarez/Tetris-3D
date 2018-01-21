@@ -20,7 +20,6 @@ void Spawn() {
               //TODO: Turn of pointer ctrl for past block
               LBlock0 tempLBlock = new LBlock();
               tempLBlock.spawn();
-
               //TODO: pointer on for new block
               grounded = false;
           case 3:
