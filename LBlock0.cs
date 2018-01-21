@@ -28,15 +28,15 @@ public class LBlock0 {
       var mousePos = Input.mousePosition;
       mousePos.z = 1.0;
       var objectPos = Camera.current.ScreenToWorldPoint(mousePos);
-      Instantiate(Lblock , objectPos, Quaternion.identity);
+      Instantiate(Lblock , 0,10,0, Quaternion.identity);
     }
 
     private void rotate(x,y) {
-        rm2D_0_LBlock(x,y);
-        if(canPlace_LBlock270(x,y)) {
+        this.GetComponent<map.cs>().rm2D_0_LBlock(x,y);
+        if(this.GetComponent<map.cs>().canPlace_LBlock270(x,y)) {
             // Remove Current 3D Block and Replace with rotated version
         } else {
-            add2D_0_LBlock;
+            this.GetComponent<map.cs>().rm2D_0_LBlock(x,y);
         }
 
     }

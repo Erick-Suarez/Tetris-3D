@@ -6,7 +6,7 @@ using Unity.Collections.Generic;
 void Spawn() {
     bool grounded == true;
 
-    if(grounded = true) {
+    while(grounded = true) {
         Random rnd = new Random();
         int spawnGroup = rnd.Next(1,8);
         switch(spawnGroup) {
